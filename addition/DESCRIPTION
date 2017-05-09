@@ -1,0 +1,13 @@
+Package: addition
+Title: Vector Sum
+Version: 0.0.0.9000
+Authors@R: person("Chris", "Gates", email = "first.last@example.com", role = c("aut", "cre"))
+Description: Adds a vector of numbers together.
+Depends: R (>= 3.3.0)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

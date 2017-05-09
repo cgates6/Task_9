@@ -1,0 +1,28 @@
+---
+title: "Addition"
+author: "Chris Gates"
+date: "May 9, 2017"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Addition}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+This function is able to add consecutive numbers together that are in a vector. So, if you don't want to manually add up all the numbers from 1 to 625, this function will do it for you.
+```{R}
+library(addition)
+```
+```{R}
+additionloop <- function(x){
+  n<-(length(x))
+  output <-0
+  for(i in 1:n){
+    output <- output+x[i]
+  }
+  return(output)
+}
+
+#This function should return the same output as the sum() function:
+
+additionloop(1:625)
+```
